@@ -1,0 +1,36 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                       Notes                          | #
+# +------------------------------------------------------+ #
+############################################################
+
+
+
+############################################################
+# +------------------------------------------------------+ #
+# |                       Config                         | #
+# +------------------------------------------------------+ #
+############################################################
+
+db_info:
+  hostname: "localhost"
+  port-number: 3306
+  db-name: "rim"
+  username: "root"
+  password: ""
+  enabled: true
+
+############################################################
+# +------------------------------------------------------+ #
+# |                       Message                        | #
+# +------------------------------------------------------+ #
+############################################################
+
+messages:
+  no-permission: "&cI'm sorry but you can't perform the command, do you have the correct permission?."
+  rim-usage: "&6Usage: &4/rim"
+  config-reloaded: "&aConfig reloaded!"
+  plugin-disabled: "RIM plugin disabled!"
+  db-enabled: "Using DB Setup!"
+  connection-error: "&cYou need to setup the correct database config!"
+  connected-to-db: "&aConnected successfully with the Database!"

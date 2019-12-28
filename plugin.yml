@@ -1,0 +1,65 @@
+name: RIM
+version: 1.0.0
+description: A simple rules and information management system plugin!
+author: lePianisteNoir
+main: eu.xgp.lepianistenoir.rim.RIM
+api: 1.14.4
+api-version: 1.13
+commands:
+  rim:
+    description: Show all the commands available.
+    usage: /<command> 
+  rules:
+    description: Show the current rules.
+    aliases: [rls]
+    usage: /<command>
+  setRules:
+    description: Set a rule.
+    aliases: [setr]
+    usage: /<command> [id] [description]
+  delRules:
+    description: Delete a specific rule.
+    aliases: [delr]
+    usage: /<command> [ruleNumber]
+  updRules:
+    description: Update a specific rule.
+    aliases: [upr]
+    usage: /<command> [ruleNumber] [newDescription]
+  info:
+    description: Show the current information of the staff.
+    aliases: [i]
+    usage: /<command> 
+  setInfo:
+    description: Set information for a staff member.
+    aliases: [seti]
+    usage: /<command> [player] [description]  
+  delInfo:
+    description: Delete the staff member from the information file or just the information for a staff member. 
+    aliases: [deli]
+    usage: /<command> [player] [player|description] 
+  updInfo:
+    description: Update information for a staff member.
+    aliases: [upi]
+    usage: /<command> [player] [newDescription]
+
+permissions:
+  rim:
+     description: Allows to manage the rules and the information of the server
+  children:
+    rim.*: true
+    rim.help: true
+    rim.reload: true
+  commandRules:
+    description: Allows to manage the rules of the server
+  children:
+    commandRules.*: true
+    commandRules.set: true
+    commandRules.delete: true
+    commandRules.update: true
+  commandInfo:
+    description: Allows to manage the information about staff of the server
+  children:
+    commandInfo.*: true
+    commandInfo.set: true
+    commandInfo.delete: true
+    commandInfo.update: true
